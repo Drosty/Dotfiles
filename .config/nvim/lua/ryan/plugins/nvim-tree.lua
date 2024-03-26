@@ -9,6 +9,7 @@ return {
     require("nvim-tree").setup({})
 
     local api = require("nvim-tree.api")
+
     -- vim.keymap.set('n', '<C-e>', ":NvimTreeToggle<cr>")
     vim.keymap.set('n', '<Leader>o', api.tree.toggle, {})
   end,

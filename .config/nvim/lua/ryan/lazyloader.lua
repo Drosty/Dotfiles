@@ -13,8 +13,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { import = "ryan.plugins" }
-  -- {import = ""}
+  { import = "ryan.plugins" },
+  { import = "ryan.plugins.lsp" }
 }, {
 
 })
