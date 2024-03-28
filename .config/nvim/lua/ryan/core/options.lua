@@ -10,7 +10,7 @@ vim.opt.relativenumber = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
-vim.opt.wrap = false 
+vim.opt.wrap = false
 
 vim.opt.expandtab = true
 vim.opt.autoindent = true
@@ -35,3 +35,5 @@ vim.opt.termguicolors = true
 vim.g.mapleader = " "
 -- vim.g.mapleader = "<Space>"
 
+-- this will clear the search results highlighted. 
+vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
