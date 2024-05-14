@@ -9,6 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/opt/nvim:~/.local/bin:$PATH
 export PATH=/opt/sunshine:$PATH
+export PATH="$PATH":"$HOME/.config/bin/"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -118,3 +119,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+bindkey -s ^f "tmux-sessionizer\n"
+
+
