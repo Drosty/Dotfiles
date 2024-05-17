@@ -41,7 +41,6 @@ return {
         "jq", -- lua formatter
         "eslint_d",
         "csharpier",
-        "xmlformatter",
       },
     })
   end,

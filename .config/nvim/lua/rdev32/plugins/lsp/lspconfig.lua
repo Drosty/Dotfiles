@@ -76,6 +76,17 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
+    -- lspconfig.apex_ls.setup({
+    --   apex_jar_path = "~/.config/bin/apex-jorje-lsp.jar",
+    --   apex_enable_semantic_errors = false, -- Whether to allow Apex Language Server to surface semantic errors
+    --   apex_enable_completion_statistics = false, -- Whether to allow Apex Language Server to collect telemetry on code completion usage
+    --   filetypes = {
+    --     "apex",
+    --     "apexcode",
+    --   },
+    --   capabilities = capabilities,
+    -- })
+
     mason_lspconfig.setup_handlers({
       -- default handler for installed servers
       function(server_name)
@@ -100,7 +111,24 @@ return {
           },
         })
       end,
+      ["apex_ls"] = function()
+        lspconfig["apex_ls"].setup({
+          -- apex_jar_path = "~/.config/bin/apex-jorje-lsp.jar",
+          cmd = {
+            "java",
+            "-jar",
+            "/home/ryan/.config/bin/apex-jorje-lsp.jar",
+            "apex_language_server",
+          },
+          apex_enable_semantic_errors = false, -- Whether to allow Apex Language Server to surface semantic errors
+          apex_enable_completion_statistics = false, -- Whether to allow Apex Language Server to collect telemetry on code completion usage
+          filetypes = {
+            "apex",
+          },
+          capabilities = capabilities,
+          on_attach = function() end,
+        })
+      end,
     })
   end,
 }
-

@@ -7,6 +7,7 @@ return {
     conform.setup({
       formatters_by_ft = {
         javascript = { "prettier" },
+        apex = { "prettier" },
         typescript = { "prettier" },
         javascriptreact = { "prettier" },
         typescriptreact = { "prettier" },
@@ -17,7 +18,6 @@ return {
         yaml = { "prettier" },
         markdown = { "prettier" },
         lua = { "stylua" },
-        xml = { "xmlformat" },
       },
       format_on_save = {
         lsp_fallback = true,

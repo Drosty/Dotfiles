@@ -25,6 +25,7 @@ return {
       -- ensure these language parsers are installed
       ensure_installed = {
         "c_sharp",
+        "apex",
         "json",
         "javascript",
         "typescript",
@@ -53,7 +54,6 @@ return {
           node_decremental = "<bs>",
         },
       },
-      
     })
   end,
 }
