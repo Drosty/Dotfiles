@@ -41,6 +41,7 @@ return {
         "jq", -- lua formatter
         "eslint_d",
         "csharpier",
+        "netcoredbg",
       },
     })
   end,
