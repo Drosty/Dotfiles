@@ -30,6 +30,7 @@ return {
         "html",
         "cssls",
         "lua_ls",
+        "apex_ls",
         "csharp_ls",
       },
     })
