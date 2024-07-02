@@ -10,6 +10,7 @@ fi
 export PATH=/opt/nvim:~/.local/bin:$PATH
 export PATH=/opt/sunshine:$PATH
 export PATH="$PATH":"$HOME/.config/bin/"
+export PATH="$PATH":"$HOME/.cargo/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -111,7 +112,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-eval "$(zoxide init zsh)"
+# eval "$(zoxide init zsh)"
+eval "$(direnv hook zsh)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
