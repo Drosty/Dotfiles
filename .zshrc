@@ -12,6 +12,9 @@ export PATH=/opt/sunshine:$PATH
 export PATH="$PATH":"$HOME/.config/bin/"
 export PATH="$PATH":"$HOME/.cargo/bin"
 
+# Add .NET Core SDK tools
+export PATH="$PATH":"$HOME/.dotnet/tools"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
