@@ -10,6 +10,7 @@ fi
 export PATH=/opt/nvim:~/.local/bin:$PATH
 export PATH=/opt/sunshine:$PATH
 export PATH="$PATH":"$HOME/.config/bin/"
+export PATH="$PATH":"$HOME/.config/bin/netcoredbg"
 export PATH="$PATH":"$HOME/.cargo/bin"
 
 # Add .NET Core SDK tools
