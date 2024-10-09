@@ -9,7 +9,7 @@ return {
     },
     config = function()
       local dap = require("dap")
-      local dotnet = require("easy-dotnet")
+      -- local dotnet = require("easy-dotnet")
       local ui = require("dapui")
       local debug_dll = nil
 
@@ -134,9 +134,9 @@ return {
         args = { "--interpreter=vscode" },
       }
 
-      dap.listeners.before["event_terminated"]["easy-dotnet"] = function()
-        debug_dll = nil
-      end
+      -- dap.listeners.before["event_terminated"]["easy-dotnet"] = function()
+      --   debug_dll = nil
+      -- end
 
       -- Handled by nvim-dap-go
       -- dap.adapters.go = {
