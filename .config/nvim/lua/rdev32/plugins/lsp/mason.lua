@@ -31,7 +31,7 @@ return {
         "cssls",
         "lua_ls",
         "apex_ls",
-        "csharp_ls",
+        -- "csharp_ls",
       },
     })
 
@@ -41,7 +41,7 @@ return {
         "stylua", -- lua formatter
         "jq", -- lua formatter
         "eslint_d",
-        "csharpier",
+        -- "csharpier",
         "netcoredbg",
       },
     })
