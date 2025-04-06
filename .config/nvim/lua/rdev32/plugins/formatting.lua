@@ -13,7 +13,7 @@ return {
         typescriptreact = { "prettier" },
         css = { "prettier" },
         html = { "prettier" },
-        cs = { "csharpier" },
+        -- cs = { "csharpier" },
         json = { "jq" },
         yaml = { "prettier" },
         markdown = { "prettier" },
